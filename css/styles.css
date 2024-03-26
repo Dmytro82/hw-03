@@ -1,0 +1,240 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-whait-color: #ffffff;
+  --primary-black-color: #000000;
+  --color-with-transparency: rgba(255, 255, 255, 0.6);
+  --color-section-background: #2f303a;
+  --color-section-background2: #f5f4fa;
+}
+
+/* color: #2196f3; */
+/* color: #000000; */
+/* color: #212121; */
+/* color: #757575; */
+/* color: #ffffff; */
+/* background: #2f303a; */
+/* color: rgba(255, 255, 255, 0.6); */
+/* background: #f5f4fa; */
+
+/* utilits */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* general */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--primary-whait-color);
+  color: var(--primary-text-color);
+
+}
+
+/* button */
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  background-color: var(--primary-whait-color);
+  color: var(--title-text-color);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.button.primary {
+  background-color: var(--accent-color);
+  color: var(--primary-whait-color);
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--primary-whait-color);
+  color: var(--accent-color);
+}
+
+/* header */
+.head {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: var(--primary-black-color);
+
+}
+
+.logo-blue {
+  color: var(--accent-color);
+}
+
+
+
+.sait-link {
+  color: var(--title-text-color);
+}
+
+.sait-link:hover,
+.sait-link:focus,
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+
+.sait-link.current {
+  color: var(--accent-color);
+}
+
+.contact-link {
+  color: var(--title-text-color);
+}
+
+/* hero */
+.hero {
+  background: var(--color-section-background);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--primary-whait-color);
+}
+
+/* section */
+.section-title {
+  /* font-weight: 700; */
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--primary-black-color);
+}
+
+/* quality */
+.quality-title {
+  /* font-weight: 700; */
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.quality-text {
+  /* font-weight: 400; */
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* What are we doing */
+
+/* our team */
+.team {
+  background: var(--color-section-background2);
+}
+
+.team-item {
+  background: var(--primary-whait-color);
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.team-profession {
+  /* font-weight: 400; */
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/* footer */
+.footer {
+  background: var(--color-section-background);
+}
+
+.footer-logo {
+  color: var(--primary-whait-color);
+}
+
+/* fotter */
+.address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address-map {
+
+  color: var(--primary-whait-color);
+}
+
+.address-hover:hover,
+.address-hover:focus {
+  color: var(--accent-color);
+}
+
+.address-contact {
+
+  color: var(--color-with-transparency);
+}
+
+/* portfolio */
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  background: var(--color-section-background2);
+  color: var(--title-text-color);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background: var(--accent-color);
+  color: var(--primary-whait-color);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* portfolio project */
+
+.project-title {
+  /* font-weight: 700; */
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.project-marker {
+  /* font-weight: 400; */
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
