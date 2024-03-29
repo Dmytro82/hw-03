@@ -105,27 +105,41 @@ img {
   color: var(--accent-color);
 }
 
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  width: 1170px;
-  padding-right: 15px;
-  padding-left: 15px;
+/* -------section, container-----------*/
+
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
+.section-title {
+  margin-bottom: 50px;
+  /* font-weight: 700; */
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  text-align: center;
+
+  color: var(--primary-black-color);
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  outline: 2px solid red;
+}
+
 /*  ---------------- header -----------------  */
 .head {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-}
-
-.head-container {
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 .logo {
@@ -162,12 +176,10 @@ img {
 
 /* --------------------hero ---------------------*/
 .hero {
-  background: var(--color-section-background);
-}
-
-.hero-container {
   padding-top: 200px;
   padding-bottom: 200px;
+  background: var(--color-section-background);
+  text-align: center;
 }
 
 .hero-title {
@@ -177,25 +189,11 @@ img {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
-
   color: var(--primary-whait-color);
 }
 
 .hero-btn {
   min-width: 216px;
-}
-
-/* ------------------------section ----------------------*/
-.section-title {
-  margin-bottom: 50px;
-  /* font-weight: 700; */
-  font-size: 36px;
-  letter-spacing: 0.03em;
-  line-height: 1.2;
-  text-align: center;
-
-  color: var(--primary-black-color);
 }
 
 /* --------------------------quality---------------- */
@@ -218,7 +216,7 @@ img {
 
 /* ----------------------What are we doing specialty --------*/
 
-.specialty-container {
+.specialty {
   padding-top: 0;
 }
 
@@ -252,12 +250,9 @@ img {
 
 /* -------------------------footer -------------------*/
 .footer {
-  background: var(--color-section-background);
-}
-
-.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
+  background: var(--color-section-background);
 }
 
 .footer-logo {
