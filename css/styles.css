@@ -320,6 +320,10 @@ img {
   padding-bottom: 50px;
 }
 
+.project-card {
+  border: 1px solid #eee;
+}
+
 .card-title {
   margin-bottom: 4px;
 
