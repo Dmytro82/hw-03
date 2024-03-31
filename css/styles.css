@@ -7,6 +7,7 @@
   --color-with-transparency: rgba(255, 255, 255, 0.6);
   --color-section-background: #2f303a;
   --color-section-background2: #f5f4fa;
+  --color-liane-card: #eeeeee;
 }
 
 /* color: #2196f3; */
@@ -53,7 +54,7 @@ ul {
 }
 
 a {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color: inherit;
   outline: 0px;
@@ -61,8 +62,8 @@ a {
 
 img {
   display: block;
-  /* min-width: 100%;
-  height: auto; */
+  min-width: 100%;
+  height: auto;
 }
 
 /* ---------------visually-hidden ------ */
@@ -134,12 +135,28 @@ img {
 
 /*  ---------------- header -----------------  */
 .head {
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
+}
+
+.head-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-sait {
+  display: flex;
+  column-gap: 50px;
+  margin-left: 93px;
+}
+
+.head-contact {
+  display: flex;
+  column-gap: 50px;
+  margin-left: auto;
 }
 
 .logo {
@@ -156,22 +173,24 @@ img {
 }
 
 .sait-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
 }
 
 .sait-link:hover,
 .sait-link:focus,
-.contact-link:hover,
-.contact-link:focus {
-  color: var(--accent-color);
-}
-
 .sait-link.current {
   color: var(--accent-color);
 }
 
 .contact-link {
   color: var(--title-text-color);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
 }
 
 /* --------------------hero ---------------------*/
@@ -197,6 +216,10 @@ img {
 }
 
 /* --------------------------quality---------------- */
+.quality-list {
+  display: flex;
+  column-gap: 30px;
+}
 
 .quality-title {
   margin-bottom: 10px;
@@ -220,9 +243,19 @@ img {
   padding-top: 0;
 }
 
+.specialty-list {
+  display: flex;
+  column-gap: 30px;
+}
+
 /* ---------------------our team---------- */
 .team {
   background: var(--color-section-background2);
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
 }
 
 .team-item {
@@ -231,7 +264,12 @@ img {
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
+.team-img {
+  margin-bottom: 30px;
+}
+
 .team-title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -241,6 +279,7 @@ img {
 }
 
 .team-profession {
+  margin-bottom: 30px;
   /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.2;
@@ -290,6 +329,16 @@ img {
 
 /* ---------------portfolio filter------------------ */
 
+.filter-container {
+  padding-bottom: 50px;
+}
+
+.filter-list {
+  display: flex;
+  column-gap: 8px;
+  justify-content: center;
+}
+
 .filter-btn {
   padding: 6px 22px;
   min-width: 73px;
@@ -311,12 +360,21 @@ img {
 
 /* --------------portfolio project--------- */
 
-.filter-container {
-  padding-bottom: 50px;
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .project-card {
-  border: 1px solid #eee;
+  flex-basis: calc((100% - 2*10)/3);
+}
+
+.card-info {
+  padding: 20px 24px;
+  border-right: 1px solid var(--color-liane-card);
+  border-bottom: 1px solid var(--color-liane-card);
+  border-left: 1px solid var(--color-liane-card);
 }
 
 .card-title {
@@ -326,7 +384,6 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
   color: var(--title-text-color);
 }
 
