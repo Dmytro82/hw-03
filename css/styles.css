@@ -54,7 +54,7 @@ ul {
 }
 
 a {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   color: inherit;
   outline: 0px;
@@ -64,6 +64,10 @@ img {
   display: block;
   min-width: 100%;
   height: auto;
+}
+
+address {
+  font-style: normal;
 }
 
 /* ---------------visually-hidden ------ */
@@ -248,6 +252,10 @@ img {
   column-gap: 30px;
 }
 
+.specialty-item {
+  flex-basis: calc((100% - 2*30)/3);
+}
+
 /* ---------------------our team---------- */
 .team {
   background: var(--color-section-background2);
@@ -259,6 +267,8 @@ img {
 }
 
 .team-item {
+  flex-basis: calc((100% - 3*30)/4);
+
   background: var(--primary-whait-color);
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
@@ -367,7 +377,7 @@ img {
 }
 
 .project-card {
-  flex-basis: calc((100% - 2*10)/3);
+  flex-basis: calc((100% - 2*30)/3);
 }
 
 .card-info {
